@@ -16,3 +16,6 @@ First hours than minutes and seconds are automaticly set to 0.
 Design of the case in stl and f3d formats you can find [there](/Case)
 
 Arduino code you can find [there](/Code)
+
+## License
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/)
