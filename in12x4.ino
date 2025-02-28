@@ -72,7 +72,7 @@ void setup() {
     digitalWrite(D[i], HIGH);
   }
   Wire.begin();
-  if (!rtc.begin()) 
+  if (!rtc.begin())
   {
     //Serial.println("Nie znaleziono DS3231");
     while (1);
@@ -83,12 +83,12 @@ void setup() {
   }
 
 }
-void loop() 
+void loop()
 {
-  
+
   if (!digitalRead(pushBtn))
   {
-    OnTimer = millis();    //trzyma czs od którego wcisneliśmy przycisk 
+    OnTimer = millis();    //trzyma czs od którego wcisneliśmy przycisk
 
     while (!digitalRead(pushBtn) && millis()-OnTimer < 2000)
     {
@@ -102,7 +102,7 @@ void loop()
     {
       //Serial.println("nie ustawiam");
     }
-    
+
   }
   now = rtc.now();
   hour = now.hour();
@@ -118,7 +118,7 @@ void loop()
   one = hour % 10;
   two =  (minute / 10) % 10;
   three = minute % 10;
-  if (three==0 && now.second() < 7) 
+  if (three==0 && now.second() < 7)
   {
     for(int i=0 ;i<10;i++)
     {
@@ -173,10 +173,10 @@ void ustaw()
         //Serial.print(";");
         //Serial.print(p[3]);
         //Serial.println(); // Dodaje nową linię na końcu
-      
+
         if (!digitalRead(pushBtn))
         {
-          OnTimer = millis();    //trzyma czs od którego wcisneliśmy przycisk 
+          OnTimer = millis();    //trzyma czs od którego wcisneliśmy przycisk
           while (!digitalRead(pushBtn) && millis()-OnTimer < 2000)
           {
             delay(100);
@@ -212,9 +212,9 @@ void ustaw()
       else
       {
       rtc.adjust(DateTime(rok, mies, dzien, godz, min, 0));
-      } 
+      }
 
-  
+
 }
 void writenumber(int a, int b) {
   switch (b) {
