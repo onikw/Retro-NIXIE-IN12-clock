@@ -13,6 +13,8 @@ Wiring of the tubes is similar but very annoying due to a need solder a cable be
 I've added a button for easy time setting. You are setting the blinking digit by shor-pressing and moving to another digit by long-pressing.
 First hours than minutes and seconds are automaticly set to 0.
 
+Now the clocks implements [this](https://surfncircuits.com/2019/04/06/eliminating-nixie-tube-cathode-poisoning-bi-quinary-digit-ghosting-and-heavily-oxidized-leads/) anti cathode poisoning routine by cycling through every digit for small period of time.
+
 Design of the case in stl and f3d formats you can find [there](/Case)
 
 Arduino code you can find [there](/Code)
