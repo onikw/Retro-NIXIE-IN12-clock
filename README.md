@@ -8,6 +8,7 @@ I've ordered a few pcb of his design and repurposed them to also build other clo
 For PCB assembly you should follow GreatScott's instrucions, however I've changed RTC module from DS1307 to more accurate **DS3231**
 
 Instead of using more expensive Nixie IN-14, I've used **Nixie IN-12** tubes.
+Wiring of the tubes is similar but very annoying due to a need solder a cable between lamp's output and original IN-14's spot on pcb.
 
 I've added a button for easy time setting. You are setting the blinking digit by shor-pressing and moving to another digit by long-pressing.
 First hours than minutes and seconds are automaticly set to 0.
